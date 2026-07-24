@@ -48,7 +48,42 @@ Van Krevelen boundaries vary among publications and are configurable. AI_mod, NO
 
 ## Citation
 
-Use `citation("DOMformulaR")`. The package documents the methodological basis from Kujawinski and Behn (2006), Koch et al. (2007), Koch and Dittmar (2006), and LaRowe and Van Cappellen (2011). No software DOI has been minted. A DOI can be added after archiving a release with Zenodo.
+Use:
+
+```r
+citation("DOMformulaR")
+```
+
+Analyses performed with DOMformulaR should cite both the package and the
+methodological sources corresponding to the functions used. DOMformulaR is an
+independent R implementation of the CHONPS formula-assignment and
+downstream-analysis components derived from the audited FTMSAnalysis/TRFu
+workflow. The originating FTMSAnalysis workflow and the TRFu formula-assignment
+algorithm are described by Fu et al. (2023) and Fu et al. (2020), respectively.
+
+DOMformulaR does not currently implement the Gaussian-based FTMSCombine
+alignment algorithm or the complete isotope-, deuterium-, and halogen-aware
+FTMSDeu workflow. Citation of Fu et al. (2023) documents workflow provenance
+and does not imply that Gaussian alignment was performed by this package.
+
+Primary workflow references:
+
+- Fu, Q.-L., Fujii, M., and Riedel, T. (2020). Development and comparison of
+  formula assignment algorithms for ultrahigh-resolution mass spectra of
+  natural organic matter. *Analytica Chimica Acta*, 1125, 247–257.
+  <https://doi.org/10.1016/j.aca.2020.05.048>
+- Fu, Q.-L., Fujii, M., and Ma, R. (2023). Development of a Gaussian-based
+  alignment algorithm for the ultrahigh-resolution mass spectra of dissolved
+  organic matter. *Analytical Chemistry*, 95(5), 2796–2803.
+  <https://doi.org/10.1021/acs.analchem.2c04113>
+
+Formula-assignment rules and molecular indices are further documented by
+Kujawinski and Behn (2006), Koch et al. (2007), Koch and Dittmar (2006), and
+LaRowe and Van Cappellen (2011). Recent comparison and uncertainty-control
+methods are listed in
+[`development_notes/reference_audit.md`](development_notes/reference_audit.md).
+No software DOI has been minted. A DOI can be added after archiving a release
+with Zenodo.
 
 ## Development
 

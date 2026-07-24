@@ -35,6 +35,10 @@ normalize_assigned_output <- function(data) {
 #' @param replicate_min_fraction Optional replicate occurrence fraction.
 #' @param output_dir Optional export directory.
 #' @return A `dom_result` S3 object.
+#' @references Fu Q-L, Fujii M, Riedel T (2020).
+#'   \doi{10.1016/j.aca.2020.05.048};
+#'   Fu Q-L, Fujii M, Ma R (2023).
+#'   \doi{10.1021/acs.analchem.2c04113}
 #' @export
 #' @examples
 #' path <- system.file("extdata", "simulated_peaks.csv", package = "DOMformulaR")

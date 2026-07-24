@@ -22,6 +22,10 @@ The supported ion model is singly charged negative-ion \verb{[M-H]-}. All
 candidates are retained before ranking.
 }
 \references{
+Fu Q-L, Fujii M, Riedel T (2020).
+\doi{10.1016/j.aca.2020.05.048};
+Fu Q-L, Fujii M, Ma R (2023).
+\doi{10.1021/acs.analchem.2c04113};
 Kujawinski EB, Behn MD (2006). \doi{10.1021/ac0600306};
 Koch BP et al. (2007). \doi{10.1021/ac061949s}
 }

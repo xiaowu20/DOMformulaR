@@ -223,7 +223,11 @@ select_best_formula <- function(
 #' @param config A `dom_config`.
 #' @param return_all Return both selected assignments and all candidates.
 #' @return A list with `assigned` and `candidates`, or assigned data frame.
-#' @references Kujawinski EB, Behn MD (2006). \doi{10.1021/ac0600306};
+#' @references Fu Q-L, Fujii M, Riedel T (2020).
+#'   \doi{10.1016/j.aca.2020.05.048};
+#'   Fu Q-L, Fujii M, Ma R (2023).
+#'   \doi{10.1021/acs.analchem.2c04113};
+#'   Kujawinski EB, Behn MD (2006). \doi{10.1021/ac0600306};
 #'   Koch BP et al. (2007). \doi{10.1021/ac061949s}
 #' @export
 assign_molecular_formulas <- function(
