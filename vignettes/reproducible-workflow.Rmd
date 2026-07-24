@@ -1,0 +1,19 @@
+---
+title: "Reproducible end-to-end workflow"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reproducible end-to-end workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(DOMformulaR)
+path <- system.file("extdata", "simulated_peaks.csv", package = "DOMformulaR")
+cfg_path <- system.file("extdata", "example_config.yml", package = "DOMformulaR")
+output <- file.path(tempdir(), "domformula-example")
+result <- run_dom_workflow(path, cfg_path, output_dir = output)
+list.files(output)
+```
+
+The output directory contains selected formulae, all candidates, a sample summary, parameter snapshot, run log, serialized result, and figures. Unknown blank or replicate evidence remains explicit.

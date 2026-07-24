@@ -1,0 +1,15 @@
+^renv$
+^DOMformulaR\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^development_notes$
+^data-raw$
+^renv\.lock$
+^_pkgdown\.yml$
+^\.lintr$
+^\.git$
+^\.gitignore$
+^CITATION\.cff$
+^CODE_OF_CONDUCT\.md$
+^CONTRIBUTING\.md$
+^LICENSE\.md$

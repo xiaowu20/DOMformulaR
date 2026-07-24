@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible DOMformulaR problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Reproducible example
+      description: Use simulated or non-sensitive data.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Session information
+      description: Paste output from sessionInfo().
+    validations:
+      required: true

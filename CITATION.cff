@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use DOMformulaR, please cite the software and the methodological papers listed in the package documentation."
+title: "DOMformulaR: Reproducible CHONPS Formula Assignment and Visualization for DOM"
+type: software
+version: 0.1.0
+date-released: 2026-07-24
+authors:
+  - name: xiaowu20
+    email: wlymusic@qq.com
+repository-code: "https://github.com/xiaowu20/DOMformulaR"
+url: "https://xiaowu20.github.io/DOMformulaR/"
+license: MIT
+keywords:
+  - dissolved organic matter
+  - FT-ICR-MS
+  - molecular formula assignment
+  - CHONPS
+  - van Krevelen
+identifiers: []
+notes: "No DOI has been minted. A DOI may be added after archiving a GitHub release with Zenodo."

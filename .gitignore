@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rcheck/
+*.tar.gz
+docs/
+coverage/
+revdep/
+development_notes/private_validation/
+inst/doc/
+vignettes/*.html
+vignettes/*.pdf

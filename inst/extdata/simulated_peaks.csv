@@ -1,0 +1,15 @@
+sample_id,replicate_id,mz,intensity,signal_to_noise,charge,blank_flag,source_file
+sample_A,A1,211.061218124109,1000000,30,-1,FALSE,simulated
+sample_A,A1,226.072084751044,700000,24,-1,FALSE,simulated
+sample_A,A1,243.033286419884,500000,18,-1,FALSE,simulated
+sample_A,A1,243.042774326927,350000,15,-1,FALSE,simulated
+sample_A,A1,255.087424520850,800000,26,-1,FALSE,simulated
+sample_A,A1,271.051970577120,300000,12,-1,FALSE,simulated
+sample_A,A1,290.025768760987,250000,11,-1,FALSE,simulated
+sample_B,B1,211.061186464929,900000,28,-1,FALSE,simulated
+sample_B,B1,226.072107358254,650000,22,-1,FALSE,simulated
+sample_B,B1,243.033256040726,450000,17,-1,FALSE,simulated
+sample_B,B1,243.042793770350,400000,16,-1,FALSE,simulated
+sample_B,B1,255.087399012108,750000,25,-1,FALSE,simulated
+sample_B,B1,271.052005813038,320000,13,-1,FALSE,simulated
+sample_B,B1,290.025739758411,220000,10,-1,FALSE,simulated

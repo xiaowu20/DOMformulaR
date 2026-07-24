@@ -1,0 +1,33 @@
+Package: DOMformulaR
+Title: Reproducible CHONPS Formula Assignment and Visualization for DOM
+Version: 0.1.0
+Authors@R: person("xiaowu20", role = c("aut", "cre"), email = "wlymusic@qq.com")
+Description: Imports ultrahigh-resolution mass spectrometry peak tables,
+    assigns candidate molecular formulae restricted to carbon, hydrogen,
+    oxygen, nitrogen, phosphorus, and sulfur, calculates formula-level
+    dissolved organic matter indices, compares samples, and produces
+    publication-ready visualizations. Accurate-mass assignments are
+    candidate annotations and are not structural identifications.
+License: MIT + file LICENSE
+URL: https://github.com/xiaowu20/DOMformulaR
+BugReports: https://github.com/xiaowu20/DOMformulaR/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.2.0)
+Imports:
+    ggplot2,
+    rlang,
+    yaml
+Suggests:
+    covr,
+    knitr,
+    lintr,
+    openxlsx,
+    pkgdown,
+    readxl,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0

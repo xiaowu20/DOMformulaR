@@ -1,0 +1,37 @@
+url: https://xiaowu20.github.io/DOMformulaR/
+template:
+  bootstrap: 5
+home:
+  title: DOMformulaR
+reference:
+  - title: Peak tables
+    contents:
+      - read_peak_table
+      - standardize_peak_table
+      - validate_peak_table
+      - inspect_peak_quality
+      - filter_peaks
+      - remove_blank_peaks
+      - filter_replicate_peaks
+      - summarize_peak_table
+  - title: Formula assignment
+    contents:
+      - dom_config
+      - generate_chonps_formulas
+      - assign_molecular_formulas
+      - filter_formula_candidates
+      - rank_formula_candidates
+      - select_best_formula
+  - title: Metrics and classification
+    contents:
+      - starts_with("calculate_")
+      - classify_element_group
+      - classify_van_krevelen_region
+      - summarize_formula_classes
+  - title: Comparison and workflow
+    contents:
+      - compare_samples
+      - calculate_shared_formulas
+      - run_dom_workflow
+      - export_dom_results
+      - starts_with("plot_")
