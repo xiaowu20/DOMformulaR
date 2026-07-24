@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/xiaowu20/DOMformulaR/blob/v0.1.0/inst/CITATION)
+[`inst/CITATION`](https://github.com/xiaowu20/DOMformulaR/blob/main/inst/CITATION)
 
 xiaowu20 (2026). *DOMformulaR: Reproducible CHONPS Formula Assignment
 and Visualization for DOM*. R package version 0.1.0. No DOI has been
