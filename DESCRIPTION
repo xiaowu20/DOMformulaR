@@ -9,7 +9,8 @@ Description: Imports ultrahigh-resolution mass spectrometry peak tables,
     publication-ready visualizations. Accurate-mass assignments are
     candidate annotations and are not structural identifications.
 License: MIT + file LICENSE
-URL: https://github.com/xiaowu20/DOMformulaR
+URL: https://github.com/xiaowu20/DOMformulaR,
+    https://xiaowu20.github.io/DOMformulaR/
 BugReports: https://github.com/xiaowu20/DOMformulaR/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

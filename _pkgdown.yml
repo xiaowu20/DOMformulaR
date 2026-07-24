@@ -6,6 +6,7 @@ home:
 reference:
   - title: Peak tables
     contents:
+      - read_dom_config
       - read_peak_table
       - standardize_peak_table
       - validate_peak_table
@@ -24,7 +25,12 @@ reference:
       - select_best_formula
   - title: Metrics and classification
     contents:
-      - starts_with("calculate_")
+      - calculate_element_ratios
+      - calculate_dbe
+      - calculate_ai_mod
+      - calculate_nosc
+      - calculate_formula_metrics
+      - default_vk_regions
       - classify_element_group
       - classify_van_krevelen_region
       - summarize_formula_classes
@@ -35,3 +41,13 @@ reference:
       - run_dom_workflow
       - export_dom_results
       - starts_with("plot_")
+  - title: Experimental integrations
+    desc: >
+      Evidence-bounded helpers. These functions do not replace raw optical
+      preprocessing, reaction validation, or ecological null models.
+    contents:
+      - integrate_dom_optics
+      - calculate_thermodynamic_indices
+      - calculate_pmd_pairs
+      - join_pmd_kegg
+      - summarize_molecular_assembly
