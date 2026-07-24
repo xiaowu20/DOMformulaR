@@ -62,6 +62,13 @@ run_dom_workflow(
 
 A `dom_result` S3 object.
 
+## References
+
+Fu Q-L, Fujii M, Riedel T (2020).
+[doi:10.1016/j.aca.2020.05.048](https://doi.org/10.1016/j.aca.2020.05.048)
+; Fu Q-L, Fujii M, Ma R (2023).
+[doi:10.1021/acs.analchem.2c04113](https://doi.org/10.1021/acs.analchem.2c04113)
+
 ## Examples
 
 ``` r

@@ -74,10 +74,19 @@
 formulae, converts theoretical neutral mass to <code>[M-H]-</code>,
 applies ppm, ratio, DBE, nominal-valence, parity, and heteroatom rules,
 and retains every candidate before deterministic ranking.</p>
-<p>The default parameter set is derived from the audited project
-workflow for comparability. It is not a universal default. Candidate
-ranking is not a posterior probability and does not convert exact-mass
-matching into compound identification.</p>
+<p>The default parameter set is derived from the audited
+FTMSAnalysis/TRFu project workflow for comparability. The originating
+workflow is described by Fu et al. (2023), DOI
+10.1021/acs.analchem.2c04113, and the TRFu formula-assignment algorithm
+is described by Fu et al. (2020), DOI 10.1016/j.aca.2020.05.048. It is
+not a universal default. Candidate ranking is not a posterior
+probability and does not convert exact-mass matching into compound
+identification.</p>
+<p>DOMformulaR does not implement the Gaussian FTMSCombine alignment
+described by Fu et al. (2023), nor the complete isotope-, deuterium-,
+and halogen-aware FTMSDeu workflow. The Fu et al. (2023) citation
+records workflow provenance and does not indicate that Gaussian
+alignment was performed.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/xiaowu20/DOMformulaR" class="external-link">DOMformulaR</a></span><span class="op">)</span></span>
 <span><span class="va">cfg</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/dom_config.html">dom_config</a></span><span class="op">(</span>elements <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
@@ -99,8 +108,17 @@ matching into compound identification.</p>
 <span><span class="co">## 67    0   0   0   4 0.6666667   0.8 0.4285714 0.6666667</span></span>
 <span><span class="co">## 69    0   0   0   3 0.5000000   0.6 0.1428571 0.3333333</span></span>
 <span><span class="co">## 71    0   0   0   2 0.3333333   0.4 0.0000000 0.0000000</span></span></code></pre>
-<p>Key methodological references are Kujawinski and Behn (2006), DOI
-10.1021/ac0600306, and Koch et al. (2007), DOI 10.1021/ac061949s.</p>
+<p>Additional formula-assignment references are Kujawinski and Behn
+(2006), DOI 10.1021/ac0600306, and Koch et al. (2007), DOI
+10.1021/ac061949s. Recent methods relevant to external comparison and
+uncertainty control include MFAssignR (Schum et al., 2020, DOI
+10.1016/j.envres.2020.110114), ICBM-OCEAN (Merder et al., 2020, DOI
+10.1021/acs.analchem.9b05659), the mass-error-distribution method of Gao
+et al. (2024), DOI 10.1021/acs.analchem.4c00489, and the data-set
+consistency method of Dewey et al. (2025), DOI
+10.1021/acs.analchem.4c06826. These methods are comparison or
+development targets and are not claimed as implemented
+functionality.</p>
   </main>
 </div>
 

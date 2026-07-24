@@ -5,10 +5,19 @@ formulae, converts theoretical neutral mass to `[M-H]-`, applies ppm,
 ratio, DBE, nominal-valence, parity, and heteroatom rules, and retains
 every candidate before deterministic ranking.
 
-The default parameter set is derived from the audited project workflow
-for comparability. It is not a universal default. Candidate ranking is
-not a posterior probability and does not convert exact-mass matching
-into compound identification.
+The default parameter set is derived from the audited FTMSAnalysis/TRFu
+project workflow for comparability. The originating workflow is
+described by Fu et al. (2023), DOI 10.1021/acs.analchem.2c04113, and the
+TRFu formula-assignment algorithm is described by Fu et al. (2020), DOI
+10.1016/j.aca.2020.05.048. It is not a universal default. Candidate
+ranking is not a posterior probability and does not convert exact-mass
+matching into compound identification.
+
+DOMformulaR does not implement the Gaussian FTMSCombine alignment
+described by Fu et al. (2023), nor the complete isotope-, deuterium-,
+and halogen-aware FTMSDeu workflow. The Fu et al. (2023) citation
+records workflow provenance and does not indicate that Gaussian
+alignment was performed.
 
 ``` r
 
@@ -35,5 +44,13 @@ head(generate_chonps_formulas(cfg, c(150, 300)))
     ## 69    0   0   0   3 0.5000000   0.6 0.1428571 0.3333333
     ## 71    0   0   0   2 0.3333333   0.4 0.0000000 0.0000000
 
-Key methodological references are Kujawinski and Behn (2006), DOI
-10.1021/ac0600306, and Koch et al. (2007), DOI 10.1021/ac061949s.
+Additional formula-assignment references are Kujawinski and Behn (2006),
+DOI 10.1021/ac0600306, and Koch et al. (2007), DOI 10.1021/ac061949s.
+Recent methods relevant to external comparison and uncertainty control
+include MFAssignR (Schum et al., 2020, DOI
+10.1016/j.envres.2020.110114), ICBM-OCEAN (Merder et al., 2020, DOI
+10.1021/acs.analchem.9b05659), the mass-error-distribution method of Gao
+et al. (2024), DOI 10.1021/acs.analchem.4c00489, and the data-set
+consistency method of Dewey et al. (2025), DOI
+10.1021/acs.analchem.4c06826. These methods are comparison or
+development targets and are not claimed as implemented functionality.

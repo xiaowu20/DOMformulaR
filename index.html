@@ -104,7 +104,19 @@
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
-<p>Use <code>citation("DOMformulaR")</code>. The package documents the methodological basis from Kujawinski and Behn (2006), Koch et al. (2007), Koch and Dittmar (2006), and LaRowe and Van Cappellen (2011). No software DOI has been minted. A DOI can be added after archiving a release with Zenodo.</p>
+<p>Use:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"DOMformulaR"</span><span class="op">)</span></span></code></pre></div>
+<p>Analyses performed with DOMformulaR should cite both the package and the methodological sources corresponding to the functions used. DOMformulaR is an independent R implementation of the CHONPS formula-assignment and downstream-analysis components derived from the audited FTMSAnalysis/TRFu workflow. The originating FTMSAnalysis workflow and the TRFu formula-assignment algorithm are described by Fu et al. (2023) and Fu et al. (2020), respectively.</p>
+<p>DOMformulaR does not currently implement the Gaussian-based FTMSCombine alignment algorithm or the complete isotope-, deuterium-, and halogen-aware FTMSDeu workflow. Citation of Fu et al. (2023) documents workflow provenance and does not imply that Gaussian alignment was performed by this package.</p>
+<p>Primary workflow references:</p>
+<ul>
+<li>Fu, Q.-L., Fujii, M., and Riedel, T. (2020). Development and comparison of formula assignment algorithms for ultrahigh-resolution mass spectra of natural organic matter. <em>Analytica Chimica Acta</em>, 1125, 247–257. <a href="https://doi.org/10.1016/j.aca.2020.05.048" class="external-link uri">https://doi.org/10.1016/j.aca.2020.05.048</a>
+</li>
+<li>Fu, Q.-L., Fujii, M., and Ma, R. (2023). Development of a Gaussian-based alignment algorithm for the ultrahigh-resolution mass spectra of dissolved organic matter. <em>Analytical Chemistry</em>, 95(5), 2796–2803. <a href="https://doi.org/10.1021/acs.analchem.2c04113" class="external-link uri">https://doi.org/10.1021/acs.analchem.2c04113</a>
+</li>
+</ul>
+<p>Formula-assignment rules and molecular indices are further documented by Kujawinski and Behn (2006), Koch et al. (2007), Koch and Dittmar (2006), and LaRowe and Van Cappellen (2011). Recent comparison and uncertainty-control methods are listed in <a href="development_notes/reference_audit.html"><code>development_notes/reference_audit.md</code></a>. No software DOI has been minted. A DOI can be added after archiving a release with Zenodo.</p>
 </div>
 <div class="section level2">
 <h2 id="development">Development<a class="anchor" aria-label="anchor" href="#development"></a>
