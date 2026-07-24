@@ -2,8 +2,8 @@
 
 The public test suite currently reports 78 passing assertions with no failed assertion, warning, or skip.
 
-Numeric line coverage is not reported as complete. `covr::package_coverage()` installs the package and runs all 78 assertions, but its child R process terminates with Windows access-violation code `-1073741819` after the successful test output. Covr therefore correctly treats the child process as failed and does not calculate a percentage.
+GitHub Actions calculated overall line coverage of 90.29% in a clean Ubuntu R environment. File-level coverage ranged from 79.78% for plotting to 98.28% for classification. The workflow enforces a minimum overall coverage of 85% and uploads a plain-text summary artifact.
 
-This defect is reproducible by loading the installed `rlang` DLL in an otherwise minimal R session and affects all four locally installed R 4.5.x runtimes. It is not acceptable to invent a coverage percentage from the passing assertion count.
+Local `covr::package_coverage()` remains unusable because its child R process terminates with Windows access-violation code `-1073741819` after successful test output. The clean CI result supersedes that local environment defect.
 
-The GitHub Actions coverage workflow is configured to run in a clean Ubuntu R environment. Its result must be reviewed after the repository exists. A release should not advertise a Codecov badge until that workflow succeeds.
+The first Codecov upload attempt was rate-limited with HTTP 429 even though coverage calculation succeeded. The package therefore uses a GitHub Actions status badge and stored summary artifact instead of presenting an unverified Codecov percentage badge.

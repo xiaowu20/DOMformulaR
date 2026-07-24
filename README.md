@@ -1,7 +1,7 @@
 # DOMformulaR
 
 [![R-CMD-check](https://github.com/xiaowu20/DOMformulaR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/xiaowu20/DOMformulaR/actions/workflows/R-CMD-check.yaml)
-[![Codecov](https://codecov.io/gh/xiaowu20/DOMformulaR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/xiaowu20/DOMformulaR)
+[![test-coverage](https://github.com/xiaowu20/DOMformulaR/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/xiaowu20/DOMformulaR/actions/workflows/test-coverage.yaml)
 
 `DOMformulaR` is an R package for reproducible formula-candidate assignment and visualization of dissolved organic matter ultrahigh-resolution mass-spectrometry peak tables.
 

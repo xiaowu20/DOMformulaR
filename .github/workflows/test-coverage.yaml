@@ -18,6 +18,18 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: any::covr
-      - name: Calculate and upload coverage
-        run: covr::codecov(quiet = FALSE)
+      - name: Calculate coverage
+        run: |
+          coverage <- covr::package_coverage()
+          percent <- covr::percent_coverage(coverage)
+          summary <- sprintf("DOMformulaR test coverage: %.2f%%", percent)
+          message(summary)
+          writeLines(summary, "coverage-summary.txt")
+          if (percent < 85) {
+            stop(sprintf("Coverage %.2f%% is below the required 85%%.", percent))
+          }
         shell: Rscript {0}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-summary
+          path: coverage-summary.txt
