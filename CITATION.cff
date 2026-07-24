@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use DOMformulaR, please cite the software and the methodological papers listed in the package documentation."
+message: "If you use DOMformulaR, please cite the software and the methodological papers listed in this file. No software DOI has been minted."
 title: "DOMformulaR: Reproducible CHONPS Formula Assignment and Visualization for DOM"
 type: software
 version: 0.1.0
@@ -16,5 +16,35 @@ keywords:
   - molecular formula assignment
   - CHONPS
   - van Krevelen
-identifiers: []
-notes: "No DOI has been minted. A DOI may be added after archiving a GitHub release with Zenodo."
+references:
+  - type: article
+    authors:
+      - given-names: Qing-Long
+        family-names: Fu
+      - given-names: Manabu
+        family-names: Fujii
+      - given-names: Thomas
+        family-names: Riedel
+    title: "Development and comparison of formula assignment algorithms for ultrahigh-resolution mass spectra of natural organic matter"
+    journal: "Analytica Chimica Acta"
+    year: 2020
+    volume: 1125
+    start: 247
+    end: 257
+    doi: "10.1016/j.aca.2020.05.048"
+  - type: article
+    authors:
+      - given-names: Qing-Long
+        family-names: Fu
+      - given-names: Manabu
+        family-names: Fujii
+      - given-names: Rui
+        family-names: Ma
+    title: "Development of a Gaussian-Based Alignment Algorithm for the Ultrahigh-Resolution Mass Spectra of Dissolved Organic Matter"
+    journal: "Analytical Chemistry"
+    year: 2023
+    volume: 95
+    issue: 5
+    start: 2796
+    end: 2803
+    doi: "10.1021/acs.analchem.2c04113"
