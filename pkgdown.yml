@@ -1,0 +1,14 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  dom-indices: dom-indices.html
+  formula-assignment: formula-assignment.html
+  getting-started: getting-started.html
+  method-validation: method-validation.html
+  reproducible-workflow: reproducible-workflow.html
+  visualization: visualization.html
+last_built: 2026-07-24T04:22Z
+urls:
+  reference: https://xiaowu20.github.io/DOMformulaR/reference
+  article: https://xiaowu20.github.io/DOMformulaR/articles
