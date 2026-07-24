@@ -3,6 +3,7 @@ name: release-check
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 jobs:
   release-check:
@@ -18,12 +19,24 @@ jobs:
           extra-packages: any::devtools, any::rcmdcheck
           needs: check
       - name: Build source package
-        run: devtools::build(path = "dist")
+        run: |
+          dir.create("dist", showWarnings = FALSE)
+          tarball <- pkgbuild::build(dest_path = "dist")
+          stopifnot(file.exists(tarball))
+          message("Built source package: ", normalizePath(tarball))
         shell: Rscript {0}
       - name: Check source package
-        run: devtools::check(error_on = "warning")
+        run: |
+          tarball <- Sys.glob("dist/*.tar.gz")
+          stopifnot(length(tarball) == 1L)
+          rcmdcheck::rcmdcheck(
+            tarball,
+            args = c("--no-manual", "--as-cran"),
+            error_on = "warning"
+          )
         shell: Rscript {0}
       - uses: actions/upload-artifact@v4
         with:
           name: source-package
           path: dist/*.tar.gz
+          if-no-files-found: error
